@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buying in Jamaica from the USA</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: situation questions (left, sticky) drive a numbered loan roadmap with a "who to contact" card per step (right); planners + directory below. */
+:root {
+  --bg: #f5f7f6;
+  --surface: #ffffff;
+  --ink: #14201b;
+  --muted: #5a6a63;
+  --line: #dce4e0;
+  --accent: #0e6b4c;
+  --accent-soft: #e2f0e9;
+  --gold: #a87814;
+  --gold-soft: #fbf1db;
+  --warn: #a2441c;
+  --warn-soft: #fbe8de;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1513; --surface: #161f1c; --ink: #e6eeea; --muted: #9cb0a7; --line: #2a3632;
+    --accent: #4fc093; --accent-soft: #183528; --gold: #e2b350; --gold-soft: #32281a;
+    --warn: #f08a5d; --warn-soft: #3a2219; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1513; --surface: #161f1c; --ink: #e6eeea; --muted: #9cb0a7; --line: #2a3632;
+  --accent: #4fc093; --accent-soft: #183528; --gold: #e2b350; --gold-soft: #32281a;
+  --warn: #f08a5d; --warn-soft: #3a2219; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.55; }
+a { color: var(--accent); overflow-wrap: anywhere; }
+h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: 1.3rem; font-weight: 700; }
+h3 { font-size: 1.08rem; font-weight: 700; }
+h4 { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
+p { margin: 0; }
+.wrap { max-width: 1160px; margin: 0 auto; padding: 32px 20px 56px; display: grid; gap: 28px; }
+
+header { display: grid; gap: 12px; max-width: 780px; }
+header > p { color: var(--muted); }
+.tag { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent); }
+.paths { display: grid; gap: 12px; }
+.path-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+@media (max-width: 820px) { .path-cards { grid-template-columns: 1fr; } }
+.pcard { text-align: left; font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: grid; gap: 10px; align-content: start; cursor: pointer; }
+.pcard:hover { border-color: var(--accent); }
+.pcard[aria-pressed="true"] { border: 2px solid var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); padding: 17px; }
+.pcard .pc-tag { justify-self: start; font-size: 0.76rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; background: var(--gold-soft); color: var(--gold); }
+.pcard b { font-family: var(--font-display); font-size: 1.3rem; }
+.pcard .pc-sub { color: var(--muted); font-size: 0.95rem; }
+.pcard dl { margin: 0; display: grid; gap: 6px; font-size: 0.92rem; }
+.pcard dt { font-size: 0.76rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.pcard dd { margin: 0 0 2px; }
+.pcard .pc-cta { justify-self: start; font-weight: 700; font-size: 0.9rem; color: var(--accent); }
+.pcard[aria-pressed="true"] .pc-cta { background: var(--accent); color: var(--surface); padding: 3px 10px; border-radius: 999px; }
+[hidden] { display: none !important; }
+.cost-table td:last-child { text-align: right; white-space: nowrap; }
+tr.total td { font-weight: 700; border-top: 2px solid var(--ink); }
+.key-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 1160px; }
+@media (max-width: 760px) { .key-facts { grid-template-columns: 1fr; } }
+.kf { background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 8px; padding: 12px 14px; font-size: 0.95rem; }
+.kf b { display: block; font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 2px; }
+
+.main { display: grid; grid-template-columns: 330px 1fr; gap: 24px; align-items: start; }
+@media (max-width: 880px) { .main { grid-template-columns: 1fr; } }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+.questions { display: grid; gap: 18px; position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+@media (max-width: 880px) { .questions { position: static; max-height: none; } }
+.q { display: grid; gap: 7px; }
+.q .qt { font-weight: 600; font-size: 0.97rem; }
+.q .hint { font-size: 0.84rem; color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button {
+  font: inherit; font-size: 0.88rem; padding: 6px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink);
+}
+.chips button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); font-weight: 600; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+.plan { display: grid; gap: 16px; }
+.plan-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px; }
+.path-pill { display: inline-block; font-size: 0.82rem; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); margin-bottom: 6px; }
+.progress { display: grid; gap: 6px; min-width: 220px; }
+.progress small { color: var(--muted); font-variant-numeric: tabular-nums; }
+.bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--accent); width: 0; transition: width .3s; }
+@media (prefers-reduced-motion: reduce) { .bar span { transition: none; } }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+.btn { font: inherit; font-size: 0.9rem; font-weight: 600; padding: 7px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.btn.primary { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+
+ol.steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.step { display: grid; grid-template-columns: 34px 1fr; gap: 14px; padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.step.blocker { border-color: var(--warn); background: var(--warn-soft); }
+.step.done { opacity: 0.6; }
+.step.done h3 { text-decoration: line-through; text-decoration-thickness: 1px; }
+.num { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-display); font-weight: 700; background: var(--accent-soft); color: var(--accent); font-variant-numeric: tabular-nums; }
+.step.blocker .num { background: var(--warn); color: var(--surface); }
+.step-body { display: grid; gap: 10px; min-width: 0; }
+.step-top { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
+.step-top label { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--muted); white-space: nowrap; cursor: pointer; }
+.step-top input { width: 18px; height: 18px; accent-color: var(--accent); }
+.step ul { margin: 0; padding-left: 20px; display: grid; gap: 4px; }
+.when { font-size: 0.8rem; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.04em; }
+.contact { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 8px; padding: 10px 14px; background: var(--bg); display: grid; gap: 8px; font-size: 0.93rem; }
+.contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px 18px; }
+.contact-grid div { display: grid; gap: 1px; }
+.contact-grid strong { font-size: 0.92rem; }
+.contact-grid span { color: var(--muted); font-variant-numeric: tabular-nums; }
+.note { font-size: 0.88rem; color: var(--muted); }
+
+.tools { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 880px) { .tools { grid-template-columns: 1fr; } }
+.tools .panel { display: grid; gap: 14px; align-content: start; }
+.field { display: grid; gap: 4px; }
+.field label { font-weight: 600; font-size: 0.9rem; }
+.field input, .field select { font: inherit; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; font-variant-numeric: tabular-nums; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.row3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.figs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+@media (max-width: 460px) { .figs, .row2, .row3 { grid-template-columns: 1fr; } }
+.fig { background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.fig small { display: block; color: var(--muted); font-size: 0.8rem; }
+.fig b { font-family: var(--font-display); font-size: 1.2rem; font-variant-numeric: tabular-nums; }
+.chip { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; background: var(--gold-soft); color: var(--gold); }
+
+table { border-collapse: collapse; width: 100%; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 0.8rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; }
+tr.hl td { background: var(--accent-soft); font-weight: 600; }
+.scroll { overflow-x: auto; }
+
+.timeline { display: grid; position: relative; padding-left: 22px; }
+.timeline::before { content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 2px; background: var(--line); }
+.tl { position: relative; padding: 0 0 14px; }
+.tl::before { content: ""; position: absolute; left: -20px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--accent); }
+.tl.gold::before { border-color: var(--gold); background: var(--gold); }
+.tl b { font-variant-numeric: tabular-nums; }
+.tl p { color: var(--muted); font-size: 0.92rem; }
+
+.dir { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.dir div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; font-size: 0.92rem; display: grid; gap: 2px; }
+.dir span { color: var(--muted); font-variant-numeric: tabular-nums; }
+footer { display: grid; gap: 14px; font-size: 0.92rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 22px; }
+footer ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.lenders { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; }
+.lcard { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; font-size: 0.93rem; }
+.lcard .tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.lcard .tags span { font-size: 0.74rem; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.lcard .tags span.t2 { background: var(--gold-soft); color: var(--gold); }
+.lcard p { color: var(--muted); }
+.lcard .ln { font-variant-numeric: tabular-nums; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.cmp td, .cmp th { min-width: 120px; }
+.cmp td:first-child, .cmp th:first-child { min-width: 150px; }
+.cmp input, .cmp select { font: inherit; font-size: 0.9rem; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; font-variant-numeric: tabular-nums; }
+.cmp tr.out td { font-weight: 700; font-variant-numeric: tabular-nums; }
+.cmp td.best { background: var(--accent-soft); color: var(--accent); }
+.wide { display: grid; grid-template-columns: 1fr 1.25fr; gap: 24px; }
+@media (max-width: 880px) { .wide { grid-template-columns: 1fr; } }
+.wide .panel { display: grid; gap: 14px; align-content: start; }
+.agent-photo { background: var(--accent-soft) url("data:image/png;base64,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") center / cover no-repeat; border-radius: 50%; flex: none; }
+.agent { display: flex; gap: 22px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--gold); border-radius: 12px; padding: 22px; }
+.agent .agent-photo { width: 120px; height: 120px; }
+.agent-body { display: grid; gap: 8px; min-width: 0; }
+.agent-lines { display: flex; flex-wrap: wrap; gap: 6px 18px; font-variant-numeric: tabular-nums; }
+.agent-lines a { font-weight: 600; }
+@media (max-width: 560px) { .agent { flex-direction: column; align-items: flex-start; } }
+.agent-mini { display: flex; gap: 12px; align-items: center; background: var(--gold-soft); border-radius: 10px; padding: 10px 14px; font-size: 0.95rem; }
+.agent-mini .agent-photo { width: 44px; height: 44px; }
+.contact.agentc { border-left-color: var(--gold); }
+.contact.agentc h4 { color: var(--gold); }
+.toast { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 8px 16px; border-radius: 8px; font-size: 0.9rem; display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <span class="tag">Step-by-step guide · Jamaicans living in the USA</span>
+    <h1>Own a home in Jamaica from the USA: NHT loan, bank mortgage or cash</h1>
+    <p>Choose how you'll pay to get your personal roadmap. Every step shows who to contact, and the planners work out your costs, payments and timeline. No Jamaican tax history needed.</p>
+  </header>
+
+  <section class="paths" aria-labelledby="paths-h">
+    <h2 id="paths-h">Start here: how will you pay?</h2>
+    <div class="path-cards" id="pathCards">
+      <button type="button" class="pcard" data-path="nht" aria-pressed="false">
+        <span class="pc-tag">Lowest interest</span>
+        <b>NHT loan</b>
+        <span class="pc-sub">Join NHT from the US, pay in 3% of your income, then borrow at NHT's low rates. A partner bank can top it up.</span>
+        <dl>
+          <dt>When you can apply</dt><dd>After 2 years of contributions (1 year if you paid NHT before)</dd>
+          <dt>Interest</dt><dd>0% to 5%, based on income</dd>
+          <dt>Best if</dt><dd>You can plan 2 years ahead and want the lowest monthly payment</dd>
+        </dl>
+        <span class="pc-cta">Choose NHT loan</span>
+      </button>
+      <button type="button" class="pcard" data-path="bank" aria-pressed="false">
+        <span class="pc-tag">Start now</span>
+        <b>Bank mortgage</b>
+        <span class="pc-sub">Borrow from a Jamaican bank or building society using your US income and credit history.</span>
+        <dl>
+          <dt>When you can apply</dt><dd>As soon as your documents are ready</dd>
+          <dt>Interest</dt><dd>The lender's mortgage rate</dd>
+          <dt>Best if</dt><dd>You want to buy within the next year and have a deposit saved</dd>
+        </dl>
+        <span class="pc-cta">Choose bank mortgage</span>
+      </button>
+      <button type="button" class="pcard" data-path="cash" aria-pressed="false">
+        <span class="pc-tag">Fastest</span>
+        <b>Cash purchase</b>
+        <span class="pc-sub">Pay the full price from savings or the sale of another property. No loan, no interest.</span>
+        <dl>
+          <dt>When you can buy</dt><dd>Now. Cash sales often close in about 2 to 4 months</dd>
+          <dt>Interest</dt><dd>None</dd>
+          <dt>Best if</dt><dd>You have the money ready and want the simplest process</dd>
+        </dl>
+        <span class="pc-cta">Choose cash purchase</span>
+      </button>
+    </div>
+    <p class="note">You can also mix them: a cash deposit with a bank mortgage, or an NHT loan with a bank top-up. Buying with a bank or cash now? You can still start NHT contributions to keep that option open later.</p>
+  </section>
+
+  <div class="agent-mini">
+    <div class="agent-photo" role="img" aria-label="Odeen Cunningham"></div>
+    <p><strong>Buying a house or land in Jamaica?</strong> Contact your real estate agent, Odeen Cunningham, at 876-305-5553 or ocunningham@realtyonegrouptitans.com. <a href="#agent">More about Odeen</a></p>
+  </div>
+
+  <div class="main">
+    <aside class="panel questions" aria-label="Your situation">
+      <h2>Your situation</h2>
+
+      <div class="q" data-paths="nht">
+        <span class="qt" id="q-prior">Did you ever pay NHT in Jamaica (through a job or as self-employed)?</span>
+        <div class="chips" role="group" aria-labelledby="q-prior" data-q="prior">
+          <button type="button" data-v="no">No, never</button>
+          <button type="button" data-v="yes">Yes</button>
+          <button type="button" data-v="unsure">Not sure</button>
+        </div>
+      </div>
+
+      <div class="q">
+        <span class="qt" id="q-trn">Do you have a Jamaican TRN?</span>
+        <div class="chips" role="group" aria-labelledby="q-trn" data-q="trn">
+          <button type="button" data-v="yes">Yes</button>
+          <button type="button" data-v="no">No / lost it</button>
+        </div>
+      </div>
+
+      <div class="q" data-paths="nht">
+        <span class="qt" id="q-nis">Do you have an NIS number?</span>
+        <p class="hint">Jamaica's National Insurance Scheme number. The NHT loan interview asks for your NIS card.</p>
+        <div class="chips" role="group" aria-labelledby="q-nis" data-q="nis">
+          <button type="button" data-v="yes">Yes</button>
+          <button type="button" data-v="no">No / lost it</button>
+        </div>
+      </div>
+
+      <div class="q" data-paths="nht bank">
+        <span class="qt" id="q-status">Your US status</span>
+        <div class="chips" role="group" aria-labelledby="q-status" data-q="status">
+          <button type="button" data-v="citizen">US citizen</button>
+          <button type="button" data-v="greencard">Green card</button>
+          <button type="button" data-v="permit">Work visa / permit</button>
+          <button type="button" data-v="none">None of these</button>
+        </div>
+      </div>
+
+      <div class="q" data-paths="nht bank">
+        <span class="qt" id="q-emp">How do you earn?</span>
+        <div class="chips" role="group" aria-labelledby="q-emp" data-q="emp">
+          <button type="button" data-v="employed">Employed (W-2)</button>
+          <button type="button" data-v="self">Self-employed</button>
+        </div>
+      </div>
+
+      <div class="q">
+        <span class="qt" id="q-goal">What do you want the loan for?</span>
+        <div class="chips" role="group" aria-labelledby="q-goal" data-q="goal">
+          <button type="button" data-v="build" data-paths="nht">Build on my land</button>
+          <button type="button" data-v="buy">Buy a house</button>
+          <button type="button" data-v="lot">Buy land</button>
+          <button type="button" data-v="scheme" data-paths="nht">NHT scheme unit</button>
+        </div>
+      </div>
+
+      <div class="q">
+        <span class="qt" id="q-travel">Can you travel to Jamaica for the loan interview?</span>
+        <div class="chips" role="group" aria-labelledby="q-travel" data-q="travel">
+          <button type="button" data-v="yes">Yes</button>
+          <button type="button" data-v="no">No, someone will act for me</button>
+        </div>
+      </div>
+    </aside>
+
+    <section class="plan" aria-live="polite">
+      <div class="plan-head">
+        <div>
+          <span class="path-pill" id="pathPill"></span>
+          <h2 id="pathTitle"></h2>
+        </div>
+        <div class="progress">
+          <small id="progText">0 of 0 steps done</small>
+          <div class="bar"><span id="progBar"></span></div>
+          <div class="actions">
+            <button class="btn primary" type="button" id="copyBtn">Copy my checklist</button>
+            <button class="btn" type="button" id="resetBtn">Clear ticks</button>
+          </div>
+        </div>
+      </div>
+      <ol class="steps" id="steps"></ol>
+    </section>
+  </div>
+
+  <div class="tools" data-paths="nht">
+    <section class="panel" aria-labelledby="calc-h">
+      <h2 id="calc-h">Contributions, interest rate and where you apply</h2>
+      <div class="row2">
+        <div class="field">
+          <label for="income" id="incomeLabel">Gross monthly pay (US$)</label>
+          <input id="income" type="number" min="0" step="50" value="4000">
+        </div>
+        <div class="field">
+          <label for="rate">US$1 = J$ (example; use today's rate)</label>
+          <input id="rate" type="number" min="1" step="0.5" value="158">
+        </div>
+      </div>
+      <div class="figs">
+        <div class="fig"><small>Your NHT contribution per month</small><b id="mUsd">–</b></div>
+        <div class="fig"><small>Same in J$</small><b id="mJmd">–</b></div>
+        <div class="fig"><small>Your income per week in J$</small><b id="wJmd">–</b></div>
+        <div class="fig"><small>Your NHT interest rate band</small><b id="band">–</b></div>
+      </div>
+      <p id="whereApply"></p>
+      <div class="scroll">
+        <table>
+          <thead><tr><th>Weekly income (J$)</th><th>Interest rate</th></tr></thead>
+          <tbody id="bandTable"></tbody>
+        </table>
+      </div>
+      <p class="note">Rates by income band as published by NHT. NHT has adjusted rates in recent budgets, so check the exact rate on your eligibility letter. With co-applicants, NHT uses the average of everyone's income.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="loan-h">
+      <h2 id="loan-h">Loan limit and monthly payment</h2>
+      <div class="row3">
+        <div class="field">
+          <label for="loanType">Loan type</label>
+          <select id="loanType">
+            <option value="build">Build on own land</option>
+            <option value="buy">Open market house</option>
+            <option value="lot">House lot (land)</option>
+            <option value="scheme">NHT scheme unit</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="applicants">Applicants</label>
+          <select id="applicants">
+            <option value="1">Just me</option>
+            <option value="2">Me + 1 co-applicant</option>
+            <option value="3">Me + 2 co-applicants</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="term">Years to repay</label>
+          <input id="term" type="number" min="5" max="40" step="1" value="30">
+        </div>
+      </div>
+      <div class="row2">
+        <div class="field">
+          <label for="loanAmt">Loan amount (J$)</label>
+          <input id="loanAmt" type="number" min="0" step="100000" value="9000000">
+        </div>
+        <div class="field">
+          <label for="loanRate">Interest rate (%)</label>
+          <input id="loanRate" type="number" min="0" max="10" step="0.5" value="5">
+        </div>
+      </div>
+      <div class="figs">
+        <div class="fig"><small>Maximum for this loan type</small><b id="limit">–</b></div>
+        <div class="fig"><small>Estimated monthly payment</small><b id="pmt">–</b></div>
+      </div>
+      <p class="note" id="limitNote"></p>
+      <p class="note">Principal and interest only. Insurance and fees are extra. The amount NHT will lend also depends on your age and what your income can afford (up to 40 years to repay).</p>
+    </section>
+
+    <section class="panel" aria-labelledby="tl-h" style="grid-column: 1 / -1;">
+      <h2 id="tl-h">When can you apply?</h2>
+      <div class="row3">
+        <div class="field">
+          <label for="regMonth">Month NHT registers you</label>
+          <input id="regMonth" type="month" value="2026-12">
+        </div>
+        <div class="field">
+          <label for="startMonth">Contributions start from (can be backdated)</label>
+          <input id="startMonth" type="month" value="2026-12">
+        </div>
+        <div class="field">
+          <label for="paidThrough">Paid up to (optional)</label>
+          <input id="paidThrough" type="month" value="">
+        </div>
+      </div>
+      <div class="figs" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="fig"><small>Backdated months</small><b id="backMonths">–</b></div>
+        <div class="fig"><small>Lump sum for backdated months</small><b id="backSum">–</b></div>
+        <div class="fig"><small>Earliest loan application</small><b id="earliest">–</b></div>
+      </div>
+      <div class="timeline" id="timeline"></div>
+      <p class="note">NHT's published rules say the first payment is due when you register, and a new contributor's waiting time is 2 years from registration (1 year for a previous contributor, who may pay that year as a lump sum but still has to wait it out). So a backdated start can bring forward the date you reach 104 weeks, but you still can't apply before the waiting time from registration ends. Get NHT to confirm in writing that they'll accept a backdated start date for you.</p>
+    </section>
+  </div>
+
+  <section class="panel" aria-labelledby="cost-h" style="display:grid; gap:14px;">
+    <h2 id="cost-h">What you'll need upfront</h2>
+    <p class="note" id="costIntro">Buyer's closing costs in Jamaica, on top of the price. The seller normally pays the 2% transfer tax. Swap in your attorney's and lender's quotes.</p>
+    <div class="row3">
+      <div class="field"><label for="cPrice">Property price (J$)</label><input id="cPrice" type="number" min="0" step="100000" value="20000000"></div>
+      <div class="field" id="cDepField"><label for="cDep">Deposit (% of price)</label><input id="cDep" type="number" min="0" max="100" step="1" value="10"></div>
+      <div class="field"><label for="cAtty">Your attorney's fee (%)</label><input id="cAtty" type="number" min="0" max="10" step="0.25" value="2.5"></div>
+    </div>
+    <div class="row3">
+      <div class="field"><label for="cVal">Valuation and survey (J$)</label><input id="cVal" type="number" min="0" step="10000" value="100000"></div>
+      <div class="field"><label for="cRate">US$1 = J$ (use today's rate)</label><input id="cRate" type="number" min="1" step="0.5" value="158"></div>
+      <div class="field" id="cFeeField"><label for="cFee">Lender's fees (% of loan, estimate)</label><input id="cFee" type="number" min="0" max="5" step="0.25" value="1"></div>
+    </div>
+    <div class="scroll">
+      <table class="cost-table"><tbody id="costRows"></tbody></table>
+    </div>
+    <p class="note">Registration (0.5%) and stamp duty (J$5,000) are usually split equally between buyer and seller, and 15% GCT is added to attorney's fees. The agreement for sale share and lender fees are estimates. Check the split in your sale agreement.</p>
+  </section>
+
+  <section class="agent" id="agent" aria-labelledby="agent-h">
+    <div class="agent-photo" role="img" aria-label="Photo of Odeen Cunningham"></div>
+    <div class="agent-body">
+      <span class="tag">Your agent for the buying process</span>
+      <h2 id="agent-h">Talk to Odeen before you choose a property</h2>
+      <p>When you're ready to buy a house or land, contact Odeen. He'll help you find a property that fits your NHT loan and top-up, and see the purchase through to closing while you're in the US.</p>
+      <div class="agent-lines">
+        <span><strong>Odeen Cunningham</strong> · Real Estate Agent, Sales Associate at Realty ONE Group Titans · Licence S-4385</span>
+      </div>
+      <div class="agent-lines">
+        <span>Phone: <a href="tel:+18763055553">876-305-5553</a></span>
+        <span>Email: <a href="mailto:ocunningham@realtyonegrouptitans.com">ocunningham@realtyonegrouptitans.com</a></span>
+        <span>Instagram: <a href="https://www.instagram.com/realhousesofjamaica/">@realhousesofjamaica</a></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wide" data-paths="nht bank">
+    <section class="panel" aria-labelledby="gap-h">
+      <h2 id="gap-h">Cover the full price: NHT loan + bank top-up</h2>
+      <p class="note" id="gapIntro">The NHT loan often won't cover the whole price or build cost. Your partner lender can finance the difference in the same application: NHT's rate on the NHT portion, the lender's own rate on the top-up.</p>
+      <div class="row2">
+        <div class="field">
+          <label for="price">Property price or build cost (J$)</label>
+          <input id="price" type="number" min="0" step="100000" value="20000000">
+        </div>
+        <div class="field">
+          <label for="cash">Your deposit / cash (J$)</label>
+          <input id="cash" type="number" min="0" step="100000" value="2000000">
+        </div>
+      </div>
+      <div class="row3">
+        <div class="field" id="nhtPartField">
+          <label for="nhtPart">NHT portion (J$)</label>
+          <input id="nhtPart" type="number" min="0" step="100000" value="11000000">
+        </div>
+        <div class="field">
+          <label for="topRate" id="topRateLbl">Top-up rate (%)</label>
+          <input id="topRate" type="number" min="0" max="20" step="0.25" value="9">
+        </div>
+        <div class="field">
+          <label for="topTerm">Years to repay</label>
+          <input id="topTerm" type="number" min="5" max="40" step="1" value="25">
+        </div>
+      </div>
+      <div class="figs">
+        <div class="fig"><small id="topNeedLbl">Top-up loan needed</small><b id="topNeed">–</b></div>
+        <div class="fig"><small>Share of price you're financing</small><b id="ltv">–</b></div>
+        <div class="fig" id="nhtPmtFig"><small>NHT portion per month</small><b id="nhtPmt">–</b></div>
+        <div class="fig"><small id="topPmtLbl">Top-up per month</small><b id="topPmt">–</b></div>
+      </div>
+      <div class="fig"><small>Total monthly payment (both loans)</small><b id="totPmt">–</b></div>
+      <p class="note" data-paths="nht">The NHT portion fills automatically from the loan planner (limit, applicants, rate and term). Change it if your eligibility letter shows a different amount. The 9% top-up rate is only a placeholder: replace it with the rate each lender quotes you. Lenders often ask overseas borrowers for a bigger deposit, so ask how much they finance for non-residents.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="cmp-h">
+      <h2 id="cmp-h">Compare lender offers</h2>
+      <p class="note">Ask 2 or 3 lenders the same questions and type their answers in. The table uses the loan amount from the left and highlights the cheapest first year among the offers that fit your deposit.</p>
+      <div class="scroll">
+        <table class="cmp">
+          <thead><tr><th>Question</th><th>Lender A</th><th>Lender B</th><th>Lender C</th></tr></thead>
+          <tbody>
+            <tr><td>Lender</td><td><input id="c0n" value="JN Bank" aria-label="Lender A name"></td><td><input id="c1n" value="Victoria Mutual" aria-label="Lender B name"></td><td><input id="c2n" value="NCB" aria-label="Lender C name"></td></tr>
+            <tr><td id="cmpRateLbl">Top-up rate (%)</td><td><input id="c0r" type="number" step="0.25" value="9" aria-label="Lender A rate"></td><td><input id="c1r" type="number" step="0.25" value="8.75" aria-label="Lender B rate"></td><td><input id="c2r" type="number" step="0.25" value="9.25" aria-label="Lender C rate"></td></tr>
+            <tr><td>Upfront fees (J$)</td><td><input id="c0f" type="number" step="10000" value="150000" aria-label="Lender A fees"></td><td><input id="c1f" type="number" step="10000" value="200000" aria-label="Lender B fees"></td><td><input id="c2f" type="number" step="10000" value="120000" aria-label="Lender C fees"></td></tr>
+            <tr><td>Max financing for overseas buyers (%)</td><td><input id="c0m" type="number" step="1" value="90" aria-label="Lender A max financing"></td><td><input id="c1m" type="number" step="1" value="90" aria-label="Lender B max financing"></td><td><input id="c2m" type="number" step="1" value="85" aria-label="Lender C max financing"></td></tr>
+            <tr data-paths="nht"><td>Processes Build on Own Land under NHT?</td>
+              <td><select id="c0b" aria-label="Lender A build loans"><option>Ask</option><option>Yes</option><option>No</option></select></td>
+              <td><select id="c1b" aria-label="Lender B build loans"><option>Ask</option><option>Yes</option><option>No</option></select></td>
+              <td><select id="c2b" aria-label="Lender C build loans"><option>Ask</option><option>Yes</option><option>No</option></select></td></tr>
+            <tr><td>Can you sign and close from the US?</td>
+              <td><select id="c0x" aria-label="Lender A remote closing"><option>Ask</option><option>Yes</option><option>No</option></select></td>
+              <td><select id="c1x" aria-label="Lender B remote closing"><option>Ask</option><option>Yes</option><option>No</option></select></td>
+              <td><select id="c2x" aria-label="Lender C remote closing"><option>Ask</option><option>Yes</option><option>No</option></select></td></tr>
+            <tr class="out"><td>Total monthly (both loans)</td><td id="c0o1">–</td><td id="c1o1">–</td><td id="c2o1">–</td></tr>
+            <tr class="out"><td>First-year cost (payments + fees)</td><td id="c0o2">–</td><td id="c1o2">–</td><td id="c2o2">–</td></tr>
+            <tr class="out"><td>Fits your deposit?</td><td id="c0o3">–</td><td id="c1o3">–</td><td id="c2o3">–</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">The example rates and fees are placeholders so the table shows how it works. Replace them with real quotes.</p>
+    </section>
+  </div>
+
+  <section aria-labelledby="lend-h" style="display:grid; gap:12px;" data-paths="nht bank">
+    <h2 id="lend-h">Find the right lender</h2>
+    <p class="note" style="max-width:780px;" id="lendIntro">Only NHT's External Financing Mortgage Programme (EFMP) partners can process your NHT loan and a top-up together. From the US, start with the lenders that have US offices or US toll-free lines. Then check that they handle your loan type (some partners haven't offered construction loans) and accept US income from an overseas voluntary contributor.</p>
+    <div class="filters chips" role="group" aria-label="Filter lenders" id="lfilter">
+      <button type="button" data-f="all" aria-pressed="true">All partners</button>
+      <button type="button" data-f="us" aria-pressed="false">US office or US toll-free</button>
+      <button type="button" data-f="bank" aria-pressed="false">Banks</button>
+      <button type="button" data-f="bs" aria-pressed="false">Building society</button>
+      <button type="button" data-f="cu" aria-pressed="false">Credit unions</button>
+    </div>
+    <div class="lenders" id="lenders"></div>
+    <div class="panel" style="display:grid; gap:8px;">
+      <h3>Questions to ask every lender</h3>
+      <ul style="margin:0; padding-left:20px; display:grid; gap:4px;">
+        <li data-paths="nht">Do you process NHT EFMP loans for <em>overseas voluntary contributors</em> with US income?</li>
+        <li data-paths="nht">Do you offer my loan type under EFMP (build on own land, open market, house lot)?</li>
+        <li>How much will you finance in total for a non-resident, and what deposit do you need?</li>
+        <li>What's your rate on the top-up or mortgage, is it fixed or variable, and for how many years?</li>
+        <li>What do I pay upfront (application, valuation, legal, stamp duty), and do you charge processing fees before approval?</li>
+        <li>Can I sign and close from the US, or do I need a Power of Attorney in Jamaica?</li>
+        <li>How long from full documents to disbursement?</li>
+      </ul>
+      <p class="note">If a partner lender turns you down, NHT says it will process the NHT loan you're entitled to through its own branches.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="dir-h" style="display:grid; gap:12px;">
+    <h2 id="dir-h">Contact directory</h2>
+    <div class="dir">
+      <div><strong>NHT Customer Care (overseas)</strong><span>USA: 305-675-4284</span><span>US &amp; Canada toll-free: 1-800-858-3219</span><span>Jamaica: 876-929-6500</span><span>wecare@nht.gov.jm · web chat at nht.gov.jm</span><span>Mon–Fri 7:30 am–4:00 pm (Jamaica time)</span></div>
+      <div><strong>NHT Head Office</strong><span>4 Park Boulevard, Kingston 5</span><span>876-929-6500-9 · 876-960-4010-23</span></div>
+      <div><strong>NHT Montego Bay (St. James)</strong><span>42b Union Street, Montego Bay</span><span>876-952-0063 · 876-979-3418-9</span></div>
+      <div><strong>NHT loan documents</strong><span>loanprocessing@nht.gov.jm</span><span>Upload via NHT Online: online.nht.gov.jm</span></div>
+      <div><strong>Tax Administration Jamaica (TRN)</strong><span>Taxpayer Registration Centre, 116 East Street, Kingston</span><span>US toll-free: 1-888-GO-JATAX</span><span>taxpayerregistrationcentre@taj.gov.jm</span></div>
+      <div><strong>NIS: Ministry of Labour &amp; Social Security</strong><span>14 National Heroes Circle, Kingston 4</span><span>876-922-8000-13</span><span>clientcare@mlss.gov.jm</span></div>
+      <div><strong>Registrar General's Dept (birth certificate, Island Record Office)</strong><span>Twickenham Park, Spanish Town, St. Catherine</span><span>876-749-0550 · 876-619-1260</span><span>information@rgd.gov.jm · rgd.gov.jm</span></div>
+      <div><strong>Jamaican missions in the US</strong><span>Embassy, Washington DC: 202-452-0660</span><span>Consulate New York: 212-935-9000</span><span>Consulate Miami: 305-374-8431</span><span>Consulate Atlanta: 404-943-0905</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong>Unofficial guide</strong>, not affiliated with the National Housing Trust. Information checked against NHT's published pages in November 2026. Rules, limits and rates change, so confirm each step with the office listed before you pay or sign.</p>
+    <div>
+      <h3>Official pages used</h3>
+      <ul>
+        <li><a href="https://www-2.nht.gov.jm/voluntary-contributor">NHT: Voluntary Contributor</a> and <a href="https://www-2.nht.gov.jm/faq/contributions">Contributions FAQ</a></li>
+        <li><a href="https://www-2.nht.gov.jm/contribution-payments/voluntary/making-payments">NHT: How are payments made?</a></li>
+        <li><a href="https://nht.gov.jm/loan-limits">NHT: Loan limits</a> and <a href="https://www.nht.gov.jm/loans">Loans</a></li>
+        <li><a href="https://www.nht.gov.jm/sites/default/files/2026-03/Checklist%20(for%20all%20loan%20types)%20-%20Revised%20March%202026.pdf">NHT: Loan documents checklist (March 2026)</a></li>
+        <li><a href="https://www-1.nht.gov.jm/efmp">NHT: External Financing Mortgage Programme (partner banks)</a></li>
+        <li><a href="https://www-1.nht.gov.jm/contact">NHT: Contact us</a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function () {
+  var state = { path: "nht", prior: "no", trn: "no", nis: "no", status: "greencard", emp: "employed", goal: "buy", travel: "no" };
+  var done = {};
+  var STORE = "nht-usa-loan-guide-v4";
+  try {
+    var saved = JSON.parse(localStorage.getItem(STORE) || "null");
+    if (saved) { Object.assign(state, saved.state || {}); done = saved.done || {}; }
+  } catch (e) {}
+  function save() { try { localStorage.setItem(STORE, JSON.stringify({ state: state, done: done })); } catch (e) {} }
+
+  var C = {
+    nht: { name: "NHT Customer Care (overseas)", lines: ["USA: 305-675-4284", "US & Canada toll-free: 1-800-858-3219", "wecare@nht.gov.jm · web chat at nht.gov.jm"] },
+    nhtHO: { name: "NHT Head Office", lines: ["4 Park Boulevard, Kingston 5", "876-929-6500-9"] },
+    nhtMB: { name: "NHT Montego Bay branch", lines: ["42b Union Street, Montego Bay", "876-952-0063"] },
+    nhtOnline: { name: "NHT Online", lines: ["online.nht.gov.jm (or the NHT app)", "Eligibility letter: nht.gov.jm/eligibility-letter"] },
+    loanDocs: { name: "NHT loan processing", lines: ["Email documents: loanprocessing@nht.gov.jm", "Or upload them in NHT Online"] },
+    taj: { name: "Tax Administration Jamaica", lines: ["Taxpayer Registration Centre, 116 East Street, Kingston", "US toll-free: 1-888-GO-JATAX", "taxpayerregistrationcentre@taj.gov.jm"] },
+    consulate: { name: "Jamaican Consulate / Embassy", lines: ["New York 212-935-9000 · Miami 305-374-8431", "Atlanta 404-943-0905 · DC 202-452-0660"] },
+    mlss: { name: "NIS, Ministry of Labour & Social Security", lines: ["14 National Heroes Circle, Kingston 4", "876-922-8000-13 · clientcare@mlss.gov.jm"] },
+    rgd: { name: "Registrar General's Department", lines: ["Twickenham Park, St. Catherine", "876-749-0550 · 876-619-1260", "information@rgd.gov.jm · order online at rgd.gov.jm"] },
+    notary: { name: "Any US notary public", lines: ["Many banks and shipping stores notarize, often free for bank customers"] },
+    efmp: { name: "NHT partner lenders (EFMP)", lines: ["Including NCB, Scotiabank, JN Bank, JMMB Bank, COK Sodality Credit Union", "Full current list: nht.gov.jm/efmp"] },
+    lawyer: { name: "A Jamaican attorney-at-law", lines: ["Prepares the Power of Attorney and handles title, stamping and registration"] },
+    agent: { name: "Odeen Cunningham, Real Estate Agent", agent: true, lines: ["Realty ONE Group Titans · Licence S-4385", "876-305-5553 · ocunningham@realtyonegrouptitans.com", "Instagram: @realhousesofjamaica"] },
+    jn: { name: "JN Bank", lines: ["From the USA: 1-800-462-9003", "US representative office in Tamarac, Florida · jnbank.com"] },
+    vm: { name: "Victoria Mutual (VMBS)", lines: ["From the USA/Canada: 1-866-967-8627", "US offices: One Pierrepont Plaza, 12th Fl, Brooklyn NY 11201", "2600 S. University Dr, Suite 109, Miramar FL 33025 · myvmgroup.com"] },
+    ncb: { name: "NCB", lines: ["USA & Canada: 1-866-622-3477 · jncb.com"] },
+    scotia: { name: "Scotiabank Jamaica", lines: ["USA & Canada toll-free: 1-866-767-2010", "customercare-jam@scotiabank.com"] }
+  };
+
+  var residency = {
+    citizen: "your US passport",
+    greencard: "your valid Permanent Resident Card (green card)",
+    permit: "your valid US work permit or work visa",
+    none: "a valid green card, non-Jamaican passport or work permit"
+  };
+
+  var goalText = {
+    build: { title: "Build on Own Land loan", docs: "<li>Registered title for your land (or proof you have legal authority to build on it).</li><li>Approved building plans and a builder's estimate (ask NHT for the construction checklist).</li>" },
+    buy: { title: "Open Market loan", docs: "<li>Sale agreement for the house, copy of the registered title, property tax certificate and water bill.</li><li>A valuation report and a surveyor's ID report (not older than 1 year).</li>" },
+    lot: { title: "House Lot loan", docs: "<li>Sale agreement and registered title for the lot.</li><li>A surveyor's ID report (not older than 1 year). You can later apply for a construction loan with the rest of your entitlement.</li>" },
+    scheme: { title: "NHT Scheme unit", docs: "<li>Watch NHT's scheme listings and apply when a development opens. Selection uses points based on income and contributions.</li><li>You must not have had an NHT loan before.</li>" }
+  };
+
+  function trnStep() {
+    var why = state.path === "nht" ? "NHT needs your TRN on the contributor form and at the loan interview."
+      : state.path === "bank" ? "Your lender and attorney need your TRN, and you need one to own property in Jamaica."
+      : "You need a TRN to buy and own property in Jamaica, and your attorney will ask for it.";
+    if (state.trn === "no") return { id: "trn", when: "Week 1 · allow a few weeks by mail", title: "Get your TRN (Taxpayer Registration Number)",
+      body: "<p>" + why + " You can get one without travelling, and you don't need to have paid any Jamaican tax.</p><ul><li>Download the <em>Application for Taxpayer Registration (Individuals), Form 1</em> at jamaicatax.gov.jm and sign it.</li><li>Get a copy of your passport or driver's licence notarized (US notary or Jamaican consulate). It must show your full name, date of birth, photo and signature.</li><li>Sign the form exactly the way you sign on that ID.</li><li>Mail both to the Taxpayer Registration Centre. Your TRN card is mailed to the address on the form.</li></ul>",
+      contacts: [C.taj, C.consulate] };
+    return { id: "trn", when: "Week 1", title: "Have your TRN card ready",
+      body: "<p>" + why + " Keep your TRN card or TAJ letter handy. Lost the card? TAJ can confirm your number and reissue it.</p>",
+      contacts: [C.taj] };
+  }
+
+  function poaGeneric() {
+    return { id: "poa", when: "Before you sign", title: "Set up a Power of Attorney if you won't be in Jamaica",
+      body: "<p>If you won't be in Jamaica to sign, someone you trust can act for you with a Power of Attorney. Ask your attorney whether you need one for your purchase.</p><ul><li>Your attorney prepares it. You sign it in front of a US notary.</li><li>In Jamaica it must be stamped at the Stamp Office and recorded at the Island Record Office (Registrar General's Department). For land dealings it's also lodged at the Office of Titles.</li><li>It ends if you cancel it, so keep it limited to this purchase if you prefer.</li></ul>",
+      contacts: [C.lawyer, C.rgd] };
+  }
+
+  function findStep(prefix) {
+    var land = state.goal === "lot";
+    var budget = state.path === "cash" ? "your budget" : "your pre-qualification amount";
+    return { id: prefix + "-find", when: state.path === "cash" ? "Week 2 onwards" : "Once pre-qualified", title: land ? "Find your land with Odeen" : "Find your property with Odeen",
+      body: "<ul><li>Share " + budget + " and your must-haves with Odeen. He'll shortlist " + (land ? "lots" : "properties") + " that fit, arrange viewings in person or by video, and help you make an offer.</li><li>Ask for the title number early so your attorney can check it before you commit.</li>" + goalText[state.goal].docs + "</ul>",
+      contacts: [C.agent] };
+  }
+
+  function agreementStep(prefix) {
+    return { id: prefix + "-agree", when: "Offer accepted", title: "Hire your attorney, sign the sale agreement and pay the deposit",
+      body: "<ul><li>Hire your own Jamaican attorney-at-law. They check the title and review the Agreement for Sale, which the seller's attorney usually prepares.</li><li>Sign the agreement and pay the deposit, usually about 10% of the price, which is held by the attorney until completion. If you're signing from the US, your attorney will tell you how it must be witnessed.</li><li>Before you wire money, call the attorney's office on a number you already trust to confirm the account details. Never rely on emailed bank details alone.</li></ul>",
+      contacts: [C.lawyer, C.agent] };
+  }
+
+  function nhtLaterStep(prefix) {
+    return { id: prefix + "-nht", when: "Optional", title: "Keep the NHT option open",
+      body: "<p>You can register as an NHT Overseas Voluntary Contributor now, even while you buy " + (state.path === "cash" ? "with cash" : "with a bank mortgage") + ". After 2 years of contributions you can apply for NHT benefits, such as a low-interest loan for your next home. NHT also has a homeowner's loan for people who bought without NHT financing.</p><p>Switch to the <strong>NHT loan</strong> path at the top to see those steps.</p>",
+      contacts: [C.nht] };
+  }
+
+  function bankSteps() {
+    var s = [], travel = state.travel === "yes", self = state.emp === "self";
+    if (state.status === "none") s.push({ id: "b-blocker", blocker: true, when: "Before anything else", title: "Check your status with lenders",
+      body: "<p>Lenders usually ask overseas applicants for proof of residency, such as a green card or an overseas passport. If your status is pending, ask each lender what they'll accept before you pay any fees.</p>", contacts: [C.jn, C.vm] });
+    s.push(trnStep());
+    s.push({ id: "b-budget", when: "Week 1", title: "Set your budget and deposit",
+      body: "<ul><li>Use <em>What you'll need upfront</em> and <em>Your bank mortgage</em> below to see your deposit, closing costs and monthly payment.</li><li>Lenders often ask overseas borrowers for a bigger deposit than local buyers, so ask each lender how much of the price they'll finance.</li><li>Keep closing costs in cash on top of the deposit: your attorney, your share of registration and stamp duty, valuation and lender fees.</li><li>Ask whether the mortgage is in J$ or US$. A J$ loan paid from US income moves with the exchange rate.</li></ul>",
+      contacts: [C.jn, C.vm] });
+    s.push({ id: "b-docs", when: "Week 1–2", title: "Gather your mortgage documents",
+      body: "<p>Each lender sets its own list. JN Bank's checklist for overseas applicants is a good guide:</p><ul><li>Passport (or driver's licence with birth certificate), your TRN and Social Security number.</li><li>Proof of residency: " + residency[state.status] + ". Plus a recent utility bill or bank statement for your US address.</li><li>Your US credit report with score (Equifax, TransUnion or Experian), and a notarized consent form for a Jamaican credit check.</li><li>" +
+        (self ? "Self-employed: last 2 years of 1040s and IRS tax transcripts, your business registration, and 12 months of statements for the business account your earnings go into."
+              : "Employed: a job letter (hire date, title, pay and hours), your last 3 monthly, 6 biweekly or 12 weekly pay stubs, and 2 years of W-2s and IRS tax transcripts.") + "</li></ul>",
+      contacts: [C.notary, C.taj] });
+    s.push({ id: "b-lender", when: "Week 2–4", title: "Choose a lender and get pre-qualified",
+      body: "<ul><li>Shortlist 2–3 lenders. Those with US offices or US toll-free lines are easiest to deal with from here (see <em>Find the right lender</em>).</li><li>Ask each one the same questions and put their answers into <em>Compare lender offers</em> to see who's cheapest over the first year.</li><li>Get a pre-qualification letter. You'll know your price range before you shop, and sellers take your offer more seriously.</li></ul>",
+      contacts: [C.jn, C.vm, C.ncb, C.scotia] });
+    s.push(findStep("b"));
+    s.push(agreementStep("b"));
+    if (!travel) s.push(poaGeneric());
+    s.push({ id: "b-approval", when: "Next 4–8 weeks", title: "Valuation, mortgage approval and commitment letter",
+      body: "<ul><li>Your lender orders or approves a valuation of the property, and your attorney gets a surveyor's ID report.</li><li>Send any outstanding documents quickly. The commitment letter can take several weeks.</li><li>Arrange property insurance. Lenders normally require it.</li></ul>",
+      contacts: [C.jn, C.vm, C.lawyer] });
+    s.push({ id: "b-close", when: "Closing", title: "Close and get your title",
+      body: "<ul><li>Your lender pays the loan to the attorneys, and you pay the rest of the price and your closing costs.</li><li>Your attorney registers the transfer and the mortgage at the National Land Agency, and the new title is issued in your name.</li><li>Set up how you'll pay the mortgage from the US. Many lenders let you wire or remit into a savings account with them.</li><li>Purchases with a mortgage often take about 4 to 6 months from offer to completion.</li></ul>",
+      contacts: [C.agent, C.lawyer] });
+    s.push(nhtLaterStep("b"));
+    return s;
+  }
+
+  function cashSteps() {
+    var s = [], travel = state.travel === "yes";
+    s.push(trnStep());
+    s.push({ id: "c-budget", when: "Week 1", title: "Work out the total cash you need",
+      body: "<ul><li>Budget for the full price plus your closing costs (see <em>What you'll need upfront</em> below).</li><li>Plan how you'll move the money. A wire from your US bank to your Jamaican attorney's account is the usual route. Compare exchange rates and fees before you send.</li></ul>",
+      contacts: [C.lawyer] });
+    s.push({ id: "c-funds", when: "Week 1–2", title: "Get your proof of funds ready",
+      body: "<ul><li>Jamaica's anti-money-laundering rules mean your attorney and the banks must check where your money comes from.</li><li>Keep recent statements for the account the money is in, plus records showing where it came from: savings, a property sale, a business, an inheritance, or a gift (with a signed gift letter).</li><li>Send the money from an account in your own name. Cash deposits and payments from other people's accounts cause delays.</li></ul>",
+      contacts: [C.lawyer] });
+    s.push(findStep("c"));
+    s.push(agreementStep("c"));
+    s.push({ id: "c-checks", when: "After signing", title: "Let your attorney finish the checks",
+      body: "<ul><li>Your attorney searches the title and checks for unpaid property tax or water bills.</li><li>Get a surveyor's ID report so you know the boundaries match the title.</li><li>A valuation is optional when you pay cash, but it confirms you're paying a fair price.</li></ul>",
+      contacts: [C.lawyer] });
+    if (!travel) s.push(poaGeneric());
+    s.push({ id: "c-close", when: "Completion date", title: "Pay the balance and get your title",
+      body: "<ul><li>Wire the balance and your closing costs to your attorney before the completion date in the agreement.</li><li>Your attorney pays the seller, registers the transfer at the National Land Agency and gets the new title issued in your name.</li><li>Cash purchases often complete in about 2 to 4 months.</li></ul>",
+      contacts: [C.agent, C.lawyer] });
+    s.push(nhtLaterStep("c"));
+    return s;
+  }
+
+  function buildSteps() {
+    if (state.path === "bank") return bankSteps();
+    if (state.path === "cash") return cashSteps();
+    var s = [];
+    var prior = state.prior !== "no";
+    var travel = state.travel === "yes";
+    var buying = state.goal === "buy" || state.goal === "lot";
+
+    if (state.status === "none") {
+      s.push({ id: "blocker", blocker: true, when: "Before anything else", title: "Confirm you can register",
+        body: "<p>To join as an Overseas Voluntary Contributor, NHT asks for a valid Permanent Resident Card, a passport, or a valid work permit from a country other than Jamaica. If your status is pending, call NHT and ask which document they'll accept before you go further.</p>",
+        contacts: [C.nht] });
+    }
+
+    s.push(trnStep());
+
+    if (state.nis === "no") {
+      s.push({ id: "nis", when: "Week 1–3", title: "Get or recover your NIS number",
+        body: "<p>The NHT contributor form asks for your NIS number, and the loan checklist lists your NIS card. Start this early.</p><ul><li>Download the NIS registration form from mlss.gov.jm.</li><li>You'll need an original or notarized copy of your birth certificate or passport, plus your TRN.</li><li>From the US, a relative or agent in Jamaica can submit for you with a notarized authorization letter. If you had a number before and lost it, email the Ministry with a copy of your ID.</li></ul>",
+        contacts: [C.mlss] });
+    }
+
+    s.push({ id: "birth", when: "Week 1–4", title: "Order a new certified birth certificate",
+      body: "<p>The loan interview asks for a certified copy of your <em>new</em> birth certificate (the current security-paper version). Order it now so it's ready when you apply.</p><ul><li>Order online at rgd.gov.jm with a credit card, or through a Jamaican consulate.</li><li>If your name has changed, also have your marriage certificate or deed poll ready.</li></ul>",
+      contacts: [C.rgd, C.consulate] });
+
+    if (prior) {
+      s.push({ id: "history", when: "Week 2", title: state.prior === "unsure" ? "Find out if you already have NHT contributions" : "Check your old contributions",
+        body: "<ul><li>Register on NHT Online with your TRN and look at your contribution history.</li><li>Previous contributors only need 1 year of on-time payments after re-registering before they can apply. You can pay that year as a lump sum, but you still wait out the year.</li><li>If NHT assessed you for work in Jamaica and you never paid it, you owe that amount with interest. Ask NHT to confirm your balance first.</li>" + (state.prior === "unsure" ? "<li>If the record shows nothing, follow the new-contributor timeline (2 years).</li>" : "") + "</ul>",
+        contacts: [C.nhtOnline, C.nht] });
+    }
+
+    s.push({ id: "docs", when: "Week 2", title: "Gather your registration documents",
+      body: "<ul><li><strong>Proof of residency:</strong> " + residency[state.status] + ".</li><li><strong>Proof of income:</strong> " +
+        (state.emp === "self" ? "your most recent US tax return (with your Schedule C). NHT bases your 3% on income after business expenses." : "your most recent pay stub, a letter of employment, or your most recent US tax return.") +
+        "</li><li>Your TRN" + (state.nis === "no" ? " and NIS number (once you have it)" : " and NIS number") + ".</li><li>Every photocopy must be signed, stamped and dated by a notary public.</li></ul>",
+      contacts: [C.notary] });
+
+    s.push({ id: "register", when: "Week 2–3", title: "Register as an Overseas Voluntary Contributor",
+      body: "<ul><li>Download and fill in the <em>Voluntary Contributor Application Form</em> from NHT's Voluntary Contributor page. Don't use correction fluid.</li><li>Call NHT before you send it to confirm the current way to submit from the US (email or upload, or mail).</li><li>Ask NHT here about the start date you want. If you want contributions backdated, get their answer in writing (see the planner below).</li><li>NHT says it will contact you within 3 working days of receiving your application.</li></ul>",
+      contacts: [C.nht, C.nhtHO] });
+
+    s.push({ id: "pay", when: "Every month", title: "Pay 3% every month, on time",
+      body: "<ul><li>" + (state.emp === "self" ? "Self-employed: 3% of your income after business-related expenses." : "Employed: 3% of your gross (before-tax) earnings.") + " Use the planner below to see the amount.</li><li>Your first payment is due when you register. After that, each month's contribution is due by the last day of the month and must be paid by the 15th of the next month to avoid penalties.</li><li>From the US you can pay online by credit card, set up a standing order with your bank, or have someone in Jamaica pay for you.</li><li>You're quoted in US$ and NHT converts to J$ at the Bank of Jamaica rate on the day it processes your payment.</li><li>Don't miss months. The 52 weeks right before your loan application must all be paid. Tell NHT straight away if your job or income changes.</li></ul>",
+      contacts: [C.nht, C.nhtOnline] });
+
+    s.push({ id: "goal", when: "While you contribute", title: "Pick your loan and line up the property paperwork",
+      body: "<p>You're aiming for a <strong>" + goalText[state.goal].title + "</strong>. Check your limit and payment in the planner below. Start on these while you build up your 2 years:</p><ul>" + (buying ? "<li><strong>Contact Odeen, your real estate agent, before you choose a property.</strong> He'll find options that fit your NHT loan and top-up, and handle the purchase with the seller and attorneys.</li>" : "") + goalText[state.goal].docs + "<li>You'll also need a current passport-size photo and two valid IDs (one government-issued).</li></ul>",
+      contacts: buying ? [C.agent, C.lawyer, C.nht] : [C.lawyer, C.nht] });
+
+    s.push({ id: "lender", when: "4–6 months before you apply", title: "Find the right lender and get pre-qualified",
+      body: "<p>Most properties cost more than the NHT loan limit, so plan on <strong>NHT loan + a top-up loan from a partner lender</strong>. Only NHT partner lenders (EFMP) can process both together. Use the <em>Find the right lender</em> and <em>Compare lender offers</em> sections below.</p><ul><li>Shortlist 2–3 partners. Lenders with US offices or US toll-free lines are easiest to deal with from here.</li><li>Ask each one the questions listed below the lender cards, especially whether they do your loan type under NHT" + (state.goal === "build" ? " (some partners haven't offered construction loans; NHT processes those itself)" : "") + " and how much they'll finance for an overseas borrower.</li><li>Get a pre-qualification on your US income so you know your top-up amount and deposit before you commit to a property.</li><li>Open a savings account with your chosen lender if they ask for one. It also makes paying the mortgage from the US easier.</li></ul>",
+      contacts: [C.jn, C.vm, C.ncb, C.scotia] });
+
+    if (!travel) {
+      s.push({ id: "poa", when: "2–3 months before you apply", title: "Set up a recorded Power of Attorney",
+        body: "<p>If you can't attend the loan interview, NHT requires a <em>recorded</em> Power of Attorney for the person who will act for you in Jamaica.</p><ul><li>Collect NHT's sample Power of Attorney and use it as the template.</li><li>Sign it in front of a US notary. Attach the county or state clerk's certification of the notary.</li><li>In Jamaica it must be stamped at the Stamp Duty office, recorded at the Island Record Office (Registrar General's Department) and registered at the Office of Titles.</li><li>Send NHT a formal letter asking to use the Power of Attorney before the interview.</li><li>NHT still expects you to attend at least a preliminary interview with valid ID, and asks for a medical examination report from your doctor (form available from NHT).</li></ul>",
+        contacts: [C.lawyer, C.rgd, C.nhtMB] });
+    }
+
+    s.push({ id: "elig", when: "When you reach 104 weeks", title: "Get your NHT eligibility letter",
+      body: "<ul><li>Ask NHT's Compliance Department to confirm your contributions are up to date. Voluntary contributors must do this before a loan interview.</li><li>Request your eligibility letter on NHT Online. It shows your loan amount, repayment period and interest rate. If the portal won't issue it for a voluntary account, request it from a branch.</li><li>As a voluntary (overseas) contributor, you only need to account for your last 12 months of working life.</li></ul>",
+      contacts: [C.nhtOnline, C.nht] });
+
+    s.push({ id: "apply", when: "Apply", title: "Apply through your lender: NHT loan + top-up in one",
+      body: "<ol style=\"margin:0; padding-left:20px; display:grid; gap:4px;\"><li>On NHT Online, request your eligibility status and send it straight to the partner lender you chose (you can do this from the website or the NHT app).</li><li>Apply at that lender for your NHT benefit <strong>and</strong> any top-up loan you need. The lender takes your financial documents and processes both.</li><li>NHT's interest rate applies to the NHT portion. The lender's own rate applies to the top-up.</li></ol><ul><li><strong>Income above J$30,000.99 a week</strong> (most US earners): you must apply at a partner lender.</li><li><strong>Income at or below that</strong>: you apply at an NHT branch, unless you need more than NHT will lend or you co-apply with someone in a higher band. Then you apply for both at a partner lender.</li><li>Ask whether the lender charges processing fees upfront. Some partners don't.</li><li>If a partner lender turns you down, NHT says it will process the loan you're entitled to through its own branches.</li></ul>",
+      contacts: [C.nhtOnline, C.efmp, C.nhtMB] });
+
+    s.push({ id: "interview", when: "Interview to approval", title: "Attend the loan interview and get your commitment letter",
+      body: "<ul><li>Your lender (or NHT, if you're applying at a branch) sets the interview and gives you its document list. Expect the originals NHT lists: NIS card, TRN, new birth certificate, two IDs, a passport photo, marriage certificate if applicable, and your property documents.</li><li>The interview won't go ahead unless every required document is there. For NHT branch applications you can email documents ahead to NHT loan processing.</li>" + (travel ? "" : "<li>Your attorney in Jamaica attends using the recorded Power of Attorney.</li>") + "<li>Once approved you get a commitment letter, then both loans are disbursed through the attorneys handling the sale or construction.</li><li>Keep paying your 3% after you get the loan. With an NHT loan, missed contributions get taken out of your mortgage payments.</li>" + (buying ? "<li>Keep Odeen updated on your approval so the sale stays on track through to closing.</li>" : "") + "</ul>",
+      contacts: buying ? [C.agent, C.efmp, C.loanDocs] : [C.efmp, C.loanDocs] });
+
+    return s;
+  }
+
+  function contactHtml(list) {
+    function cell(c) { return "<div><strong>" + c.name + "</strong>" + c.lines.map(function (l) { return "<span>" + l + "</span>"; }).join("") + "</div>"; }
+    var agents = list.filter(function (c) { return c.agent; });
+    var others = list.filter(function (c) { return !c.agent; });
+    var html = "";
+    if (agents.length) html += '<div class="contact agentc"><h4>Your agent for the buying process</h4><div class="agent-mini" style="background:transparent;padding:0;"><div class="agent-photo" role="img" aria-label="Odeen Cunningham"></div><div class="contact-grid" style="flex:1;">' + agents.map(cell).join("") + "</div></div></div>";
+    if (others.length) html += '<div class="contact"><h4>Who to contact</h4><div class="contact-grid">' + others.map(cell).join("") + "</div></div>";
+    return html;
+  }
+
+  var lastSteps = [];
+  function render() {
+    applyPath();
+    document.querySelectorAll(".chips[data-q]").forEach(function (g) {
+      var k = g.getAttribute("data-q");
+      g.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-v") === state[k] ? "true" : "false"); });
+    });
+    var prior = state.prior !== "no";
+    applyPath();
+    var goalLbl = { buy: "buying a house", lot: "buying land", build: "building on your land", scheme: "an NHT scheme unit" }[state.goal];
+    if (state.path === "nht") {
+      document.getElementById("pathPill").textContent = "NHT loan · " + (prior ? "returning contributor, 1-year wait" : "new contributor, 2-year wait");
+      document.getElementById("pathTitle").textContent = "Your roadmap to an NHT " + goalText[state.goal].title;
+    } else if (state.path === "bank") {
+      document.getElementById("pathPill").textContent = "Bank mortgage · apply when ready";
+      document.getElementById("pathTitle").textContent = "Your roadmap: " + goalLbl + " with a bank mortgage";
+    } else {
+      document.getElementById("pathPill").textContent = "Cash purchase · often 2 to 4 months";
+      document.getElementById("pathTitle").textContent = "Your roadmap: " + goalLbl + " with cash";
+    }
+
+    var steps = buildSteps(); lastSteps = steps;
+    var ol = document.getElementById("steps"); ol.innerHTML = "";
+    var k = 0;
+    steps.forEach(function (st) {
+      var li = document.createElement("li");
+      li.className = "step" + (st.blocker ? " blocker" : "") + (done[st.id] ? " done" : "");
+      li.innerHTML = '<div class="num">' + (st.blocker ? "!" : ++k) + '</div><div class="step-body"><div class="step-top"><div><div class="when">' + st.when + '</div><h3>' + st.title + '</h3></div><label for="cb-' + st.id + '"><input type="checkbox" id="cb-' + st.id + '"' + (done[st.id] ? " checked" : "") + '> Done</label></div>' + st.body + contactHtml(st.contacts) + '</div>';
+      li.querySelector("input").addEventListener("change", function (e) { done[st.id] = e.target.checked; save(); render(); });
+      ol.appendChild(li);
+    });
+    var n = steps.length, d = steps.filter(function (x) { return done[x.id]; }).length;
+    document.getElementById("progText").textContent = d + " of " + n + " steps done";
+    document.getElementById("progBar").style.width = (n ? (d / n) * 100 : 0) + "%";
+
+    var lt = document.getElementById("loanType");
+    if (lt.dataset.user !== "1") lt.value = state.goal;
+    calc(); loan(); timeline(); costs();
+  }
+
+  function applyPath() {
+    var allowed = state.path === "nht" ? ["buy", "lot", "build", "scheme"] : ["buy", "lot"];
+    if (allowed.indexOf(state.goal) < 0) state.goal = "buy";
+    document.querySelectorAll("[data-paths]").forEach(function (el) {
+      el.hidden = el.getAttribute("data-paths").split(" ").indexOf(state.path) < 0;
+    });
+    document.querySelectorAll("#pathCards .pcard").forEach(function (b) {
+      var on = b.getAttribute("data-path") === state.path;
+      b.setAttribute("aria-pressed", on ? "true" : "false");
+      b.querySelector(".pc-cta").textContent = on ? "Selected" : "Choose " + b.querySelector("b").textContent.toLowerCase();
+    });
+    var nht = state.path === "nht", bank = state.path === "bank", cash = state.path === "cash";
+    document.getElementById("q-goal").textContent = nht ? "What do you want the loan for?" : "What are you buying?";
+    document.getElementById("q-travel").textContent = nht ? "Can you travel to Jamaica for the loan interview?" : "Can you travel to Jamaica to sign and close?";
+    document.getElementById("gap-h").textContent = nht ? "Cover the full price: NHT loan + bank top-up" : "Your bank mortgage";
+    document.getElementById("gapIntro").textContent = nht
+      ? "The NHT loan often won't cover the whole price or build cost. Your partner lender can finance the difference in the same application: NHT's rate on the NHT portion, the lender's own rate on the top-up."
+      : "Enter the price and your deposit to see the mortgage you need and the monthly payment. Use the rate each lender quotes you.";
+    document.getElementById("nhtPartField").hidden = !nht;
+    document.getElementById("nhtPmtFig").hidden = !nht;
+    document.getElementById("topRateLbl").textContent = nht ? "Top-up rate (%)" : "Mortgage rate (%)";
+    document.getElementById("topNeedLbl").textContent = nht ? "Top-up loan needed" : "Mortgage needed";
+    document.getElementById("topPmtLbl").textContent = nht ? "Top-up per month" : "Mortgage per month";
+    document.getElementById("cmpRateLbl").textContent = nht ? "Top-up rate (%)" : "Mortgage rate (%)";
+    document.getElementById("lendIntro").textContent = nht
+      ? "Only NHT's External Financing Mortgage Programme (EFMP) partners can process your NHT loan and a top-up together. From the US, start with the lenders that have US offices or US toll-free lines. Then check that they handle your loan type (some partners haven't offered construction loans) and accept US income from an overseas voluntary contributor."
+      : "These are Jamaica's main mortgage lenders. From the US, start with the ones that have US offices or US toll-free lines, then compare their quotes for overseas borrowers.";
+    document.getElementById("cDepField").hidden = cash;
+    document.getElementById("cFeeField").hidden = cash;
+  }
+
+  function costs() {
+    var cash = state.path === "cash";
+    var price = num("cPrice"), dep = cash ? 100 : num("cDep"), atty = num("cAtty") / 100;
+    var loanAmt = cash ? 0 : price * (1 - dep / 100);
+    var fx = num("rate");
+    var rows = [
+      [cash ? "Purchase price (paid in full)" : "Deposit (" + fmt(dep, 0) + "% of price)", price * dep / 100, false],
+      ["Your attorney (" + fmt(atty * 100, 2) + "% + 15% GCT)", price * atty * 1.15, true],
+      ["Registration fee (your half of 0.5%)", price * 0.0025, true],
+      ["Stamp duty (your half of J$5,000)", 2500, true],
+      ["Agreement for sale (your share, estimate)", price * 0.002 * 1.15, true],
+      ["Valuation and survey", num("cVal"), true]
+    ];
+    if (!cash) rows.push(["Lender's fees (estimate)", loanAmt * num("cFee") / 100, true]);
+    var closing = rows.filter(function (r) { return r[2]; }).reduce(function (a, r) { return a + r[1]; }, 0);
+    var upfront = rows[0][1] + closing;
+    function usd(j) { return fx ? " · ≈US$" + fmt(j / fx, 0) : ""; }
+    var html = rows.map(function (r) { return "<tr><td>" + r[0] + "</td><td>J$" + fmt(r[1], 0) + "</td></tr>"; }).join("");
+    html += '<tr class="total"><td>Closing costs (' + (price ? fmt(closing / price * 100, 1) : 0) + "% of price)</td><td>J$" + fmt(closing, 0) + usd(closing) + "</td></tr>";
+    html += '<tr class="total"><td>' + (cash ? "Total cash needed" : "Cash needed upfront (deposit + closing costs)") + "</td><td>J$" + fmt(upfront, 0) + usd(upfront) + "</td></tr>";
+    if (!cash) html += "<tr><td>Loan needed for the rest</td><td>J$" + fmt(loanAmt, 0) + "</td></tr>";
+    document.getElementById("costRows").innerHTML = html;
+  }
+
+  function fmt(n, dec) { return n.toLocaleString("en-US", { minimumFractionDigits: dec, maximumFractionDigits: dec }); }
+  function jm(n) { return "J$" + (n >= 1e6 ? fmt(n / 1e6, n % 1e6 === 0 ? 0 : 1) + "M" : fmt(n, 0)); }
+
+  var BANDS = [
+    { max: 30000.99, label: "Minimum wage to 30,000.99", rate: 0 },
+    { max: 42000.99, label: "30,001 to 42,000.99", rate: 2 },
+    { max: 100000.99, label: "42,001 to 100,000.99", rate: 4 },
+    { max: Infinity, label: "100,001 and over", rate: 5 }
+  ];
+  var bandIdx = 3;
+  function calc() {
+    var self = state.emp === "self";
+    document.getElementById("incomeLabel").textContent = self ? "Monthly income after expenses (US$)" : "Gross monthly pay (US$)";
+    var inc = parseFloat(document.getElementById("income").value) || 0;
+    var rate = parseFloat(document.getElementById("rate").value) || 0;
+    var m = inc * 0.03;
+    var weekly = inc * rate * 12 / 52;
+    bandIdx = BANDS.findIndex(function (b) { return weekly <= b.max; });
+    document.getElementById("mUsd").textContent = "US$" + fmt(m, 2);
+    document.getElementById("mJmd").textContent = "J$" + fmt(m * rate, 0);
+    document.getElementById("wJmd").textContent = "J$" + fmt(weekly, 0);
+    document.getElementById("band").textContent = BANDS[bandIdx].rate + "% interest";
+    document.getElementById("bandTable").innerHTML = BANDS.map(function (b, i) {
+      return '<tr class="' + (i === bandIdx ? "hl" : "") + '"><td>' + b.label + '</td><td>' + b.rate + '%</td></tr>';
+    }).join("");
+    document.getElementById("whereApply").innerHTML = weekly > 30000.99
+      ? '<span class="chip">Apply through a partner lender</span> At about J$' + fmt(weekly, 0) + ' a week, you apply through an NHT partner bank or credit union, at NHT\'s rate.'
+      : '<span class="chip">Apply at an NHT branch</span> At this income you apply directly at an NHT branch.';
+    var lr = document.getElementById("loanRate");
+    if (lr.dataset.user !== "1") { lr.value = BANDS[bandIdx].rate; loan(); }
+  }
+
+  var LIMITS = {
+    build: [11e6, 17e6, 23e6],
+    buy: [9e6, 17e6, 23e6],
+    lot: [5e6, 7e6, 10.5e6],
+    scheme: [null, null, null]
+  };
+  function loan() {
+    var type = document.getElementById("loanType").value;
+    var n = parseInt(document.getElementById("applicants").value, 10);
+    var lim = LIMITS[type][n - 1];
+    document.getElementById("limit").textContent = lim ? jm(lim) : "Up to 100% financing";
+    var note = "";
+    if (type === "buy" && n === 1) note = "A single applicant can get up to J$12M if the house costs J$14M or less.";
+    if (type === "lot") note = "Buying land and building later? You can use up to J$5M of your entitlement for the land and apply for the rest to build.";
+    if (type === "scheme") note = "NHT scheme units can be 100% financed, subject to approval and selection.";
+    document.getElementById("limitNote").textContent = note;
+    var P = parseFloat(document.getElementById("loanAmt").value) || 0;
+    var r = (parseFloat(document.getElementById("loanRate").value) || 0) / 100 / 12;
+    var t = Math.min(40, Math.max(1, parseInt(document.getElementById("term").value, 10) || 30)) * 12;
+    var pay = r === 0 ? P / t : P * r / (1 - Math.pow(1 + r, -t));
+    var rate = parseFloat(document.getElementById("rate").value) || 0;
+    document.getElementById("pmt").textContent = "J$" + fmt(pay, 0) + (rate ? " (≈US$" + fmt(pay / rate, 0) + ")" : "");
+    gap();
+  }
+
+  function amort(P, annualPct, years) {
+    if (P <= 0) return 0;
+    var r = annualPct / 100 / 12, t = Math.max(1, years) * 12;
+    return r === 0 ? P / t : P * r / (1 - Math.pow(1 + r, -t));
+  }
+  function num(id) { return parseFloat(document.getElementById(id).value) || 0; }
+  var gapState = { top: 0, nhtPay: 0, price: 0, cash: 0 };
+  function gap() {
+    var price = num("price"), cash = num("cash");
+    var type = document.getElementById("loanType").value;
+    var n = parseInt(document.getElementById("applicants").value, 10);
+    var lim = LIMITS[type][n - 1];
+    var np = document.getElementById("nhtPart");
+    if (np.dataset.user !== "1") np.value = Math.round(Math.max(0, Math.min(lim || price, price - cash)));
+    var nht = state.path === "nht" ? num("nhtPart") : 0;
+    var top = Math.max(0, price - cash - nht);
+    var nhtPay = state.path === "nht" ? amort(nht, num("loanRate"), num("term") || 30) : 0;
+    var topPay = amort(top, num("topRate"), num("topTerm") || 25);
+    var fx = num("rate");
+    function both(j) { return "J$" + fmt(j, 0) + (fx ? " (≈US$" + fmt(j / fx, 0) + ")" : ""); }
+    document.getElementById("topNeed").textContent = top > 0 ? jm(top) : "None needed";
+    document.getElementById("ltv").textContent = price ? fmt((nht + top) / price * 100, 0) + "%" : "–";
+    document.getElementById("nhtPmt").textContent = both(nhtPay);
+    document.getElementById("topPmt").textContent = both(topPay);
+    document.getElementById("totPmt").textContent = both(nhtPay + topPay);
+    gapState = { top: top, nhtPay: nhtPay, price: price, cash: cash };
+    compare();
+  }
+
+  function compare() {
+    var rows = [0, 1, 2].map(function (i) {
+      var r = num("c" + i + "r"), f = num("c" + i + "f"), m = num("c" + i + "m");
+      var monthly = gapState.nhtPay + amort(gapState.top, r, num("topTerm") || 25);
+      var fits = !m || gapState.price * (1 - m / 100) <= gapState.cash + 0.5;
+      return { monthly: monthly, year: monthly * 12 + f, fits: fits };
+    });
+    var best = -1;
+    rows.forEach(function (o, i) { if (o.fits && (best < 0 || o.year < rows[best].year)) best = i; });
+    rows.forEach(function (o, i) {
+      document.getElementById("c" + i + "o1").textContent = "J$" + fmt(o.monthly, 0);
+      var y = document.getElementById("c" + i + "o2");
+      y.textContent = "J$" + fmt(o.year, 0) + (i === best ? " · lowest" : "");
+      y.className = i === best ? "best" : "";
+      var m = num("c" + i + "m");
+      document.getElementById("c" + i + "o3").textContent = o.fits ? "Yes" : "No, needs J$" + fmt(gapState.price * (1 - m / 100), 0) + " down";
+    });
+  }
+
+  var LENDERS = [
+    { n: "JN Bank", t: "bank", us: true, lines: ["From the USA: 1-800-462-9003", "US representative office: Tamarac, Florida"], p: "Remote, digital mortgage process for clients overseas.", w: "jnbank.com" },
+    { n: "Victoria Mutual (VMBS)", t: "bs", us: true, lines: ["From the USA/Canada: 1-866-967-8627", "One Pierrepont Plaza, 12th Floor, Brooklyn NY 11201", "2600 S. University Dr, Suite 109, Miramar FL 33025"], p: "Building society with US representative offices and a diaspora team.", w: "myvmgroup.com" },
+    { n: "NCB (National Commercial Bank)", t: "bank", us: true, lines: ["USA & Canada: 1-866-622-3477"], p: "Largest bank in Jamaica; one of the first EFMP partners.", w: "jncb.com" },
+    { n: "Scotiabank Jamaica", t: "bank", us: true, lines: ["USA & Canada toll-free: 1-866-767-2010", "customercare-jam@scotiabank.com"], p: "One of the first EFMP partners; also offers its own mortgage products alongside the NHT loan.", w: "jm.scotiabank.com" },
+    { n: "JMMB Bank", t: "bank", us: false, lines: [], p: "EFMP partner bank.", w: "jm.jmmb.com" },
+    { n: "First Global Bank", t: "bank", us: false, lines: [], p: "EFMP partner bank.", w: "" },
+    { n: "Sagicor Bank", t: "bank", us: false, lines: [], p: "EFMP partner bank. Sagicor Life is also a partner.", w: "" },
+    { n: "CIBC Caribbean (Jamaica)", t: "bank", us: false, lines: [], p: "EFMP partner bank.", w: "" },
+    { n: "Cornerstone Trust & Merchant Bank", t: "bank", us: false, lines: [], p: "EFMP partner merchant bank.", w: "" },
+    { n: "COK Sodality Credit Union", t: "cu", us: false, lines: [], p: "One of the first EFMP partners.", w: "" },
+    { n: "Other partner credit unions", t: "cu", us: false, lines: [], p: "JPS & Partners, Grace, First Regional, First Heritage, Jamaica Police, Trelawny and Postal & Partners. Some are tied to particular employers or groups, so check who can join.", w: "" }
+  ];
+  var lfilter = "all";
+  function renderLenders() {
+    var tName = { bank: "Bank", bs: "Building society", cu: "Credit union" };
+    document.getElementById("lenders").innerHTML = LENDERS.filter(function (l) {
+      return lfilter === "all" || (lfilter === "us" ? l.us : l.t === lfilter);
+    }).map(function (l) {
+      return '<div class="lcard"><strong>' + l.n + '</strong><div class="tags"><span>' + tName[l.t] + '</span>' + (l.us ? '<span class="t2">US contact</span>' : '') + '</div>' +
+        l.lines.map(function (x) { return '<span class="ln">' + x + '</span>'; }).join("") +
+        '<p>' + l.p + '</p><span class="ln">' + (l.w || "Contact details: see nht.gov.jm/efmp") + '</span></div>';
+    }).join("");
+  }
+  document.getElementById("lfilter").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    lfilter = b.getAttribute("data-f");
+    this.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+    renderLenders();
+  });
+  renderLenders();
+  ["price", "cash", "topRate", "topTerm"].forEach(function (id) { document.getElementById(id).addEventListener("input", gap); });
+  document.getElementById("nhtPart").addEventListener("input", function (e) { e.target.dataset.user = "1"; gap(); });
+  [0, 1, 2].forEach(function (i) { ["r", "f", "m"].forEach(function (k) { document.getElementById("c" + i + k).addEventListener("input", compare); }); });
+
+  var MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  function parseM(v) { if (!v) return null; var p = v.split("-"); return parseInt(p[0], 10) * 12 + parseInt(p[1], 10) - 1; }
+  function label(mi) { return MONTHS[((mi % 12) + 12) % 12] + " " + Math.floor(mi / 12); }
+  function timeline() {
+    var reg = parseM(document.getElementById("regMonth").value) || parseM("2026-12");
+    var start = parseM(document.getElementById("startMonth").value);
+    if (start === null) start = reg;
+    var paid = parseM(document.getElementById("paidThrough").value);
+    var prior = state.prior !== "no";
+    var back = Math.max(0, reg - start);
+    var inc = parseFloat(document.getElementById("income").value) || 0;
+    var rate = parseFloat(document.getElementById("rate").value) || 0;
+    var monthly = inc * 0.03;
+    document.getElementById("backMonths").textContent = back ? back + " month" + (back === 1 ? "" : "s") : "None";
+    document.getElementById("backSum").textContent = back ? "US$" + fmt(monthly * back, 0) + " · J$" + fmt(monthly * back * rate, 0) : "–";
+
+    var weeksDate = start + (prior ? 12 : 24);
+    var waitDate = reg + (prior ? 12 : 24);
+    var earliest = Math.max(weeksDate, waitDate);
+    document.getElementById("earliest").textContent = label(earliest);
+
+    var items = [];
+    if (state.trn === "no" || state.nis === "no") items.push(["", "Now", "Start your " + [state.trn === "no" ? "TRN" : "", state.nis === "no" ? "NIS" : ""].filter(Boolean).join(" and ") + " application" + (state.trn === "no" && state.nis === "no" ? "s" : "") + " and order your birth certificate."]);
+    if (back) items.push(["", label(start), "Backdated start of contributions (" + back + " month" + (back === 1 ? "" : "s") + " before registration), if NHT approves."]);
+    items.push(["", label(reg), "NHT registers you. First payment due now" + (back ? ", plus the backdated lump sum" : "") + "."]);
+    items.push(["", label(weeksDate), prior ? "12 months of on-time payments reached since your start date." : "104 weeks (2 years) of contributions reached from your start date."]);
+    if (waitDate > weeksDate) items.push(["", label(waitDate), "Waiting time from registration ends (" + (prior ? "1 year" : "2 years") + ")."]);
+    if (state.travel === "no") items.push(["", label(earliest - 3), "Have your recorded Power of Attorney done by now."]);
+    items.push(["gold", label(earliest), "Earliest month to request your eligibility letter and apply, if every month in the 52 weeks before is paid."]);
+    if (paid !== null) {
+      var gap = earliest - 1 - paid;
+      items.push([gap > 0 ? "" : "gold", "Paid up to " + label(paid), gap > 0 ? "You still need " + gap + " more monthly payment" + (gap === 1 ? "" : "s") + " before " + label(earliest) + "." : "You're paid up through the month before your earliest application date."]);
+    }
+    document.getElementById("timeline").innerHTML = items.map(function (it) { return '<div class="tl ' + it[0] + '"><b>' + it[1] + '</b><p>' + it[2] + '</p></div>'; }).join("");
+  }
+
+  document.querySelectorAll(".chips[data-q]").forEach(function (g) {
+    g.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      state[g.getAttribute("data-q")] = b.getAttribute("data-v");
+      if (g.getAttribute("data-q") === "goal") document.getElementById("loanType").dataset.user = "";
+      save(); render();
+    });
+  });
+  ["income", "rate"].forEach(function (id) { document.getElementById(id).addEventListener("input", function () { calc(); loan(); timeline(); }); });
+  document.getElementById("loanType").addEventListener("change", function (e) { e.target.dataset.user = "1"; loan(); });
+  document.getElementById("loanRate").addEventListener("input", function (e) { e.target.dataset.user = "1"; loan(); });
+  ["applicants", "loanAmt", "term"].forEach(function (id) { document.getElementById(id).addEventListener("input", loan); });
+  ["regMonth", "startMonth", "paidThrough"].forEach(function (id) { document.getElementById(id).addEventListener("input", timeline); });
+  document.getElementById("regMonth").addEventListener("change", function (e) {
+    var s = document.getElementById("startMonth");
+    if (!s.value || s.value > e.target.value) s.value = e.target.value;
+    timeline();
+  });
+  document.getElementById("pathCards").addEventListener("click", function (e) {
+    var b = e.target.closest(".pcard"); if (!b) return;
+    state.path = b.getAttribute("data-path"); save(); render();
+    document.getElementById("pathTitle").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  ["cDep", "cAtty", "cVal", "cFee"].forEach(function (id) { document.getElementById(id).addEventListener("input", costs); });
+  document.getElementById("cPrice").addEventListener("input", function (e) { document.getElementById("price").value = e.target.value; gap(); costs(); });
+  document.getElementById("price").addEventListener("input", function (e) { document.getElementById("cPrice").value = e.target.value; costs(); });
+  document.getElementById("cDep").addEventListener("input", function (e) { document.getElementById("cash").value = Math.round(num("cPrice") * num("cDep") / 100); gap(); });
+  document.getElementById("cRate").addEventListener("input", function (e) { document.getElementById("rate").value = e.target.value; calc(); loan(); timeline(); costs(); });
+  document.getElementById("rate").addEventListener("input", function (e) { document.getElementById("cRate").value = e.target.value; costs(); });
+  document.getElementById("resetBtn").addEventListener("click", function () { done = {}; save(); render(); });
+
+  function toast(msg) { var t = document.getElementById("toast"); t.textContent = msg; t.style.display = "block"; setTimeout(function () { t.style.display = "none"; }, 2200); }
+  document.getElementById("copyBtn").addEventListener("click", function () {
+    var tmp = document.createElement("div");
+    var lines = [document.getElementById("pathTitle").textContent + " (from the USA)", ""];
+    var k = 0;
+    lastSteps.forEach(function (st) {
+      tmp.innerHTML = st.body;
+      lines.push((done[st.id] ? "[x] " : "[ ] ") + (st.blocker ? "!" : ++k) + ". " + st.title + " (" + st.when + ")");
+      var p = tmp.querySelector("p"); if (p) lines.push("   " + p.textContent);
+      Array.prototype.forEach.call(tmp.querySelectorAll("li"), function (li) { lines.push("   - " + li.textContent); });
+      lines.push("   Contact: " + st.contacts.map(function (c) { return c.name + " (" + c.lines.join("; ") + ")"; }).join(" | "));
+      lines.push("");
+    });
+    if (state.path === "nht") lines.push("Earliest loan application: " + document.getElementById("earliest").textContent);
+    lines.push("Agent for the buying process: Odeen Cunningham, 876-305-5553, ocunningham@realtyonegrouptitans.com");
+    var text = lines.join("\n");
+    try { navigator.clipboard.writeText(text).then(function () { toast("Checklist copied"); }, function () { toast("Your browser blocked copying"); }); }
+    catch (e) { toast("Your browser blocked copying"); }
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
